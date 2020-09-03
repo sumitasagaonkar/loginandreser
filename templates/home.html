@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this is home page of project</title>
+</head>
+<body>
+
+	<h1>this is home page of the project</h1>
+	<a href="{% url 'login' %}">login</a>
+	<br>
+	<a href="{% url 'register' %}">register</a>
+	<br>
+	<hr>
+
+	<h6>name =  {{request.user}}</h6>
+	<h3><a href="{% url 'logout' %}">logout</a></h3>
+
+</body>
+</html>
